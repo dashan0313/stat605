@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "usage: $0 <column> [file.csv]" 1>&2
+echo "usage: $0 <column> [file.csv] that reads the columns specified by <column> (a positive number) from the comma-separated-values file (with
+header) specified by [file.csv] (or from stdin if no [file.csv] is specified) and writes its mean (possibly rounded down)." 1>&2
 
 #reads the columns specified by <column> (a positive number) from the comma-separated-values file (with
 #header) specified by [file.csv] (or from stdin if no [file.csv] is specified) and
 #writes its mean (possibly rounded down).
 
 if [ $# -lt 1 -o $# -gt 2 ]; then
-	echo "ERROR: wrong number of paramters"
 	exit 1
 fi
 

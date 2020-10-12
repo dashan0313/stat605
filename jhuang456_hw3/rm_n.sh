@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "usage: $0 <dir> <n>" 1>&2
+echo "usage: $0 <dir> <n> that removes all files in directory dir larger than <n> bytes." 1>&2
 
 my_dir=$1
 byte=$2

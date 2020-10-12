@@ -15,6 +15,6 @@ elif [ $# != 2 ];then
 fi
 
 find $my_dir -size +"$byte"c | { while read line; do
-if [ -f $line ]; then rm $line; echo "remove file $line"; fi;
+if [ -f $line ]; then rm -r $line; echo "remove file $line"; fi;
 done;}
 

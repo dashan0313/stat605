@@ -1,0 +1,7 @@
+my expression is
+^[a-z]$|^([a-z])[a-z]\1$|^([a-z])([a-z]).*\3\2$
+
+that contains 3 part(seperated by |):
+1.single letter
+2.word whose length is 3
+3.word's length > 3 and the last two characters are the first two cahracters in reverse order.
